@@ -1,3 +1,5 @@
+import random
+
 import pandas as pd
 
 from flask import Flask
@@ -14,6 +16,11 @@ def base():
 @app.route('/data')
 def display_data():
     return data.to_json()
+
+
+@app.route('/predict')
+def predict():
+    return data.iloc[random.randint(0, len(data) - 1)].to_json()
 
 
 if __name__ == '__main__':
