@@ -134,4 +134,3 @@ dmypy.json
 # Project Files
 spotify_app/data/archive.zip
 spotify_app/data/SpotifyFeatures.csv
-spotify_app/notebooks
